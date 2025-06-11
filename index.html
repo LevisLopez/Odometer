@@ -9,12 +9,37 @@
     <meta name="apple-mobile-web-app-title" content="Odómetro Moto">
     <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiT2TDs21ldHJvIE1vdG8iLCJzaG9ydF9uYW1lIjoiT2TDs21ldHJvIiwiZGVzY3JpcHRpb24iOiJPZMOzbWV0cm8gcHJvZmVzaW9uYWwgcGFyYSBtb3RvY2ljbGV0YSIsInN0YXJ0X3VybCI6Ii8iLCJkaXNwbGF5Ijoic3RhbmRhbG9uZSIsImJhY2tncm91bmRfY29sb3IiOiIjMDAwMDAwIiwidGhlbWVfY29sb3IiOiIjMDBmZmNjIiwiaWNvbnMiOlt7InNyYyI6ImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjRiV3h1Y3owaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNQzl6ZG1jaUlIZHBaSFJvUFNJeE1qZ2lJR2hsYVdkb2REMGlNVEk0SWo0OGNtVmpkQ0IzYVdSMGFEMGlNVEk0SWlCb1pXbG5hSFE5SWpFeU9DSWdabWxzYkQwaUl6QXdabVpqWXlJdlBqeDBaWGgwSUhnOUlqWTBJaUI1UFNJMk5DSWdabWxzYkQwaUkzZG1abVlpSUdadmJuUXRjMmw2WlQwaU16SWlQazlFdzZsdGRISnZQQzkwWlhoMFBqd3ZjM1puUGc9PSIsInNpemVzIjoiMTI4eDEyOCIsInR5cGUiOiJpbWFnZS9zdmcreG1sIn1dfQ==">
     <title>Motorcycle Odometer Pro</title>
-    <style>
+    
+	
+	
+	<style>
+	
+	        /* Agrega estas reglas @font-face */
+        @font-face {
+            font-family: 'Digital-7';
+            src: url('fonts/digital-7.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Digital-7 Mono'; /* Una versión monoespaciada puede verse mejor */
+            src: url('fonts/digital-7 (mono).ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        /* Fin de las reglas @font-face */
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
+	
+  
+  
+  
 
         body {
             font-family: 'Courier New', monospace;
@@ -80,11 +105,11 @@
             100% { left: 100%; }
         }
 
-        .speed-number {
-            font-size: 120px;
-            font-weight: bold;
-            font-family: 'Courier New', 'Digital-7', monospace;
-            color: #00ff00;
+			.speed-number {
+			font-size: 120px;
+			font-weight: normal; /* Cambiado a normal, la fuente ya tiene el "bold" */
+			font-family: 'Digital-7', 'Digital-7 Mono', 'Courier New', monospace; /* <-- Nueva línea */
+			color: #00ff00;
             text-shadow: 
                 0 0 10px #00ff00,
                 0 0 20px #00ff00,
